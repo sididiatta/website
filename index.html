@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet cart</title>
+    <link rel="stylesheet" href="https://unpk.com/sanitize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="projects" class="projects">
+        <h2 class="projects__title">Mes Projets</h2>
+        <section id="cards" class="cards">
+            <div class="card">
+                <h3 class="card_title"> mon premier projet Javascript</h3>
+                <img class="card_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmaFmgPKD1EWZu-DGB8dDerukGJ-jxN--R4S64jqKKzbpTrTel8gW9kWen5VAuWG--HXs&usqp=CAU" alt="image d'illustration de mon premier projet javascript">
+                <p class="card__text"> ce projet javascript est un site portefolio de tous mes projets sous forme de cartes.</p>
+            </div> 
+            <div class="card">
+                <h3 class="card_title"> mon premier projet React</h3>
+                <img class="card_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjSDhfkM8nqQ8k5s5FS6DdmZgp-HEkV5TpkG4TLP8wfmg6W81Wq3mKKCcinb7FLLPksMA&usqp=CAU" alt="image d'illustration de mon premier projet javascript">
+                <p class="card__text"> ce projet React est un site recettes connecté et communnautaire.</p>
+            </div><div class="card">
+                <h3 class="card_title"> mon premier projet Node</h3>
+                <img class="card_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAl0ntnn2_PemyQhtvBn-e-08ml_Pm7iZmwXo2xGA2AgWWZUAN4o4CmSf71Cm7WO6P9RI&usqp=CAU" alt="image d'illustration de mon premier projet javascript">
+                <p class="card__text"> ce projet Node est un mini réseau social connecté à MongoDB.</p>
+            </div>
+        </section>
+    </section>
+
+    <section id="new-projet" class="new-project">
+        <h2 class="new-project__title"> Ajouter un projet à nom portefolio</h2>
+        <form id="new-project-form" class="new-project-form" onsubmit="handleSubmité(event)">
+            <div class="new-project-form__input-group">
+                <label for="project-title">Titre du projet</label>
+                <input type="text" name="project-title" id="project-title">
+            </div>
+            <div class="new-project-form__input-group">
+                <label for="project-img-link">Lien vers une image en ligne</label>
+                <input type="text" name="project-img-link" id="project-img-link">
+            </div>
+            <div class="new-project-form__input-group new-project-form__input-group--textarea">
+                <label for="project-text">Description du projet</label>
+                <textarea name="project-text" id="project-text" rows="10"></textarea>
+            </div>
+            <button class="new-project__button" type="submit">Créer le projet</button>
+
+        </form>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
